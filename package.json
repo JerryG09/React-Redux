@@ -4,5 +4,10 @@
   "main": "index.js",
   "repository": "https://github.com/JerryG09/React-Redux.git",
   "author": "JerryG09 <phemmy09@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0"
+  }
 }
