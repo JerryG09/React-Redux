@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from "react-redux"
+// import PropTypes from "prop-types"
 import { fetchPost } from "../actions/postActions"
 
 class Post extends Component {
@@ -21,6 +22,11 @@ class Post extends Component {
     )
   }
 }
+
+// Posts.propTypes = {
+//   fetchPosts: propTypes.fun.isRequired,
+//   posts: propTypes.array.isRequired
+// }
 
 const mapStateToProps = state => ({
   posts: state.posts.items
