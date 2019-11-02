@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { connect } from "react-redux"
+import { createPost } from "../actions/postActions"
 
 class PostForm extends Component {
   constructor(props) {
@@ -24,6 +26,7 @@ class PostForm extends Component {
     }
 
     // Call Action
+    this.props.createPost(post)
   }
   render () {
     return (
@@ -56,4 +59,8 @@ class PostForm extends Component {
   }
 }
 
-export default PostForm
+// const mapStateToProps = () => {
+
+// }
+
+export default connect(null, { createPost })(PostForm)
